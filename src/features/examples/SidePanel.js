@@ -5,6 +5,8 @@ import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
 import * as actions from './redux/actions';
 
+import { Nav, NavItem, NavLink } from 'reactstrap';
+
 export class SidePanel extends Component {
   static propTypes = {
     examples: PropTypes.object.isRequired,
@@ -23,30 +25,34 @@ export class SidePanel extends Component {
         <div className="examples-side-panel">
           <button onClick={() => this.handleMenuVisibility()}>Hide</button>
           <div style={{ display: sideMenuVisible ? 'block' : 'none' }}>
-            <ul>
-              <li>
+            <Nav vertical>
+              <NavItem>
                 <Link to="/">Home</Link>
-              </li>
-              <li>
+              </NavItem>
+              <NavItem>
                 <Link to="/examples">Welcome</Link>
-              </li>
-              <li>
-                <Link to="/examples/counter">Counter Demo</Link>
-              </li>
-              <li>
+              </NavItem>
+              <NavItem>
+                <Link to="/examples/counter">Counter</Link>
+              </NavItem>
+              <NavItem>
                 <Link to="/examples/reddit">Reddit API Demo</Link>
-              </li>
-
-              <li>
+              </NavItem>
+              <NavItem>
                 <Link to="/customer">Customers</Link>
-              </li>
-            </ul>
+              </NavItem>
+            </Nav>
+            <hr />
+            <p>Link based</p>
+            <Nav vertical>
+              <NavLink href="#">Link</NavLink> <NavLink href="#">Link</NavLink> <NavLink href="#">Another Link</NavLink> <NavLink disabled href="#">Disabled Link</NavLink>
+            </Nav>
           </div>
         </div>
         )
       } else {
         return (
-          <button onClick={() => this.handleMenuVisibility()}>Hide</button>
+          ''
         )
       }
   }
