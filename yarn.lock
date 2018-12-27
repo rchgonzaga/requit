@@ -1389,6 +1389,11 @@ boolbase@~1.0.0:
   resolved "https://registry.yarnpkg.com/boolbase/-/boolbase-1.0.0.tgz#68dff5fbe60c51eb37725ea9e3ed310dcc1e776e"
   integrity sha1-aN/1++YMUes3cl6p4+0xDcwed24=
 
+bootstrap@^4.2.1:
+  version "4.2.1"
+  resolved "https://registry.yarnpkg.com/bootstrap/-/bootstrap-4.2.1.tgz#8f8bdca024dbf0e8644da32e918c8a03a90a5757"
+  integrity sha512-tt/7vIv3Gm2mnd/WeDx36nfGGHleil0Wg8IeB7eMrVkY0fZ5iTaBisSh8oNANc2IBsCc6vCgCNTIM/IEN0+50Q==
+
 boxen@^1.2.1:
   version "1.3.0"
   resolved "https://registry.yarnpkg.com/boxen/-/boxen-1.3.0.tgz#55c6c39a8ba58d9c61ad22cd877532deb665a20b"
@@ -7310,11 +7315,6 @@ react-router@^4.2.0, react-router@^4.3.1:
     prop-types "^15.6.1"
     warning "^4.0.1"
 
-react-sidenav@^3.1.3:
-  version "3.1.3"
-  resolved "https://registry.yarnpkg.com/react-sidenav/-/react-sidenav-3.1.3.tgz#7a6277ed4ad4bad35f8b4c94ab5b666c2a5d4d2a"
-  integrity sha512-x8ZIl8zhVgvi80uuRMPMevqjNOsiyAhvEOZws73BNDdn72ZQp1qGY76tGBzW90nmofKHasR4nw2ZnHWW5/HCAA==
-
 react-test-renderer@^16.0.0-0:
   version "16.7.0"
   resolved "https://registry.yarnpkg.com/react-test-renderer/-/react-test-renderer-16.7.0.tgz#1ca96c2b450ab47c36ba92cd8c03fcefc52ea01c"
@@ -7561,7 +7561,7 @@ regjsparser@^0.1.4:
   dependencies:
     jsesc "~0.5.0"
 
-rekit-core@^2.3.0:
+rekit-core@^2.3.4:
   version "2.3.4"
   resolved "https://registry.yarnpkg.com/rekit-core/-/rekit-core-2.3.4.tgz#015ff37ead09ec69a9d00abaeaebb02fc06b6cff"
   integrity sha512-vHeKAk1nYHTu+b3CkcmtAoogpfCii9PgnnB5h09eZsy1vnXPF3jMYrORWujYovm/IPTDSu4e1ET13/HM+qah6g==
@@ -7582,7 +7582,7 @@ rekit-core@^2.3.0:
     shelljs "^0.8.0"
     trash "^4.2.1"
 
-rekit-studio@^2.3.0:
+rekit-studio@^2.4.1:
   version "2.4.1"
   resolved "https://registry.yarnpkg.com/rekit-studio/-/rekit-studio-2.4.1.tgz#a53db65ed655a04066877877837b4d5f4f412d0a"
   integrity sha512-IFedcKPuD5AIMMSdJ8HXAutiyQNbzYVJU87iphko21QtxpY1/MZcNWEyi6hhQT1YtNa3txRoOwhSi3P0TtmdrQ==

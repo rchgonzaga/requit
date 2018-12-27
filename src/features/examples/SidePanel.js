@@ -16,7 +16,6 @@ export class SidePanel extends Component {
   };
 
   render() {
-    console.log(this.props.actions);
     let { sideMenuVisible } = this.props.examples;
 
     if(sideMenuVisible) {
@@ -42,10 +41,6 @@ export class SidePanel extends Component {
                 <Link to="/customer">Customers</Link>
               </li>
             </ul>
-            <div className="memo">
-              This is a Rekit feature that contains some examples for you to quick learn how Rekit
-              works. To remove it just delete the feature.
-            </div>
           </div>
         </div>
         )
