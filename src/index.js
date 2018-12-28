@@ -1,4 +1,5 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
+import 'react-table/react-table.css'
 
 import React from 'react';
 import { AppContainer } from 'react-hot-loader';
