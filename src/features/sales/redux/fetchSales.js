@@ -8,6 +8,9 @@ import {
   SALES_FETCH_SALES_DISMISS_ERROR,
 } from './constants'
 
+/**
+ * 
+ */
 export const fetchSales = (args = {}) => {
   console.log(args)
   return dispatch => {
@@ -22,7 +25,6 @@ export const fetchSales = (args = {}) => {
 
       } catch (error) {
         dispatch({type: SALES_FETCH_SALES_FAILURE, data: { error: error }})
-        console.error(error)
       }
     }
 
@@ -30,13 +32,9 @@ export const fetchSales = (args = {}) => {
   }
 }
 
-// Async action saves request error by default, this method is used to dismiss the error info.
-// If you don't want errors to be saved in Redux store, just ignore this method.
-export const dismissFetchSalesError = () => {
-  return {
-    type: SALES_FETCH_SALES_DISMISS_ERROR,
-  }
-}
+export const dismissFetchSalesError = () => ({
+    type: SALES_FETCH_SALES_DISMISS_ERROR
+})
 
 export const reducer = (state, action) => {
   switch (action.type) {

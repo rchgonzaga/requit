@@ -9,6 +9,7 @@ import jsonQuery from 'json-query';
 import { SidePanel } from '../examples';
 import ReactTable from 'react-table';
 import _ from 'lodash';
+import GenericCruder from '../../utils/genericCruder';
 
 export class DefaultPage extends Component {
   static propTypes = {
@@ -21,6 +22,10 @@ export class DefaultPage extends Component {
   };
 
   render() {
+
+    const crud = new GenericCruder({endPoint: 'sales?_page=7&_limit=50'})
+    crud.printCall()
+
     const { fetchSalesPending, salesList, fetchSalesListError } = this.props.sales;
     const { fetchSales } = this.props.actions;
 
