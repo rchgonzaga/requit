@@ -3,6 +3,7 @@
 
 import {
   DefaultPage,
+  SalesForm,
 } from './';
 
 export default {
@@ -10,5 +11,6 @@ export default {
   name: 'Sales',
   childRoutes: [
     { path: 'default-page', name: 'Default page', component: DefaultPage, isIndex: true },
+    { path: 'sales-form', name: 'Sales form', component: SalesForm },
   ],
 };

@@ -44,6 +44,9 @@ export class SidePanel extends Component {
               <NavItem>
                 <Link to="/sales">Sales</Link>
               </NavItem>
+              <NavItem>
+                <Link to="/sales/sales-form">Add Sale</Link>
+              </NavItem>
             </Nav>
             <hr />
             <p>Link based</p>
