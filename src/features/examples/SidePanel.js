@@ -7,6 +7,8 @@ import * as actions from './redux/actions';
 
 import { Nav, NavItem, NavLink } from 'reactstrap';
 
+import StarterNavigation from './StarterNavigation'
+
 export class SidePanel extends Component {
   static propTypes = {
     examples: PropTypes.object.isRequired,
@@ -23,6 +25,7 @@ export class SidePanel extends Component {
     if(sideMenuVisible) {
       return (
         <div className="examples-side-panel">
+          <StarterNavigation />
           <button onClick={() => this.handleMenuVisibility()}>Hide</button>
           <div style={{ display: sideMenuVisible ? 'block' : 'none' }}>
             <Nav vertical>
